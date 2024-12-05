@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "191396454134",
+    "project_id": "nvmbr511",
+    "storage_bucket": "nvmbr511.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:191396454134:android:0d9240dcffdb1a6f6b16d7",
+        "android_client_info": {
+          "package_name": "com.example.soundmarketplaceapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCr8lXmKJKsbSmAA7ik68xRuBijxsM5l5Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
