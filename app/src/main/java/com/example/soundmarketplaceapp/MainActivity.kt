@@ -14,7 +14,7 @@ class MainActivity : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_authorization_page)
 
-        //Добавление перехода
+        //Добавление перехода :0
 
         // Находим кнопку "Войти" по ID
         val loginButton: Button = findViewById(R.id.btnEnter)
