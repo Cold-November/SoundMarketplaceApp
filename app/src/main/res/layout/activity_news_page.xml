@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/darkgrey">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Открыта новая студия!"
+        android:fontFamily="@font/spectral_regular"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toTopOf="@+id/image2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/image2"
+        android:layout_width="360dp"
+        android:layout_height="186dp"
+        android:layout_marginTop="80dp"
+        android:src="@drawable/image2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Современный сатуратор уже доступен!"
+        android:fontFamily="@font/spectral_regular"
+        android:textColor="@color/white"
+        android:textSize="21sp"
+        app:layout_constraintBottom_toTopOf="@+id/image3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/image3"
+        android:layout_width="360dp"
+        android:layout_height="186dp"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/image3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Как писался саундтрек к Cyberpunk2024"
+        android:fontFamily="@font/spectral_regular"
+        android:textColor="@color/white"
+        android:textSize="21sp"
+        app:layout_constraintBottom_toTopOf="@+id/image4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/image4"
+        android:layout_width="360dp"
+        android:layout_height="186dp"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/image4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image3" />
+
+
+
+
+
+
+
+    <ImageButton
+        android:id="@+id/imgbtn_news_news"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@color/darkgrey"
+        android:src="@drawable/ic_news_onclk"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imgbtn_upload_news"
+        android:layout_width="40dp"
+        android:layout_height="50dp"
+        android:background="@color/darkgrey"
+        android:src="@drawable/ic_upload"
+        android:layout_marginStart="50dp"
+        android:layout_marginBottom="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imgbtn_news_news" />
+
+    <ImageButton
+        android:id="@+id/imgbtn_store_news"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@color/darkgrey"
+        android:src="@drawable/ic_store"
+        android:layout_marginStart="50dp"
+        android:layout_marginBottom="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imgbtn_upload_news" />
+
+    <ImageButton
+        android:id="@+id/imgbtn_profile_news"
+        android:layout_width="40dp"
+        android:layout_height="50dp"
+        android:background="@color/darkgrey"
+        android:src="@drawable/ic_profile"
+        android:layout_marginStart="50dp"
+        android:layout_marginBottom="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imgbtn_store_news" />
+
+    <FrameLayout
+        android:layout_width="410dp"
+        android:layout_height="1dp"
+        android:background="@color/lightgrey"
+        android:layout_marginBottom="25dp"
+        app:layout_constraintBottom_toTopOf="@+id/imgbtn_upload_news"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

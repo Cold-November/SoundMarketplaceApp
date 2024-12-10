@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/darkgrey">
+
+    <ImageView
+        android:id="@+id/imgv_profile_photo"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/ic_profile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        tools:text="Username"
+        android:fontFamily="@font/spectral_regular"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgv_profile_photo" />
+
+    <TextView
+        android:id="@+id/balance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Баланс: 0.00 рублей"
+        android:fontFamily="@font/spectral_regular"
+        android:textColor="@color/yellow"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/username" />
+
+    <ImageButton
+        android:id="@+id/imgbtn_like"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@color/darkgrey"
+        android:src="@drawable/ic_like"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/balance"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/imgbtn_basket"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@color/darkgrey"
+        android:src="@drawable/ic_basket"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgbtn_like"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/imgbtn_news_profile"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="25dp"
+        android:background="@color/darkgrey"
+        android:src="@drawable/ic_news"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/imgbtn_upload_profile"
+        android:layout_width="40dp"
+        android:layout_height="50dp"
+        android:background="@color/darkgrey"
+        android:src="@drawable/ic_upload"
+        android:layout_marginStart="50dp"
+        android:layout_marginBottom="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imgbtn_news_profile" />
+
+    <ImageButton
+        android:id="@+id/imgbtn_store_profile"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@color/darkgrey"
+        android:src="@drawable/ic_store"
+        android:layout_marginStart="50dp"
+        android:layout_marginBottom="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imgbtn_upload_profile" />
+
+    <ImageButton
+        android:id="@+id/imgbtn_profile_profile"
+        android:layout_width="40dp"
+        android:layout_height="50dp"
+        android:background="@color/darkgrey"
+        android:src="@drawable/ic_profile_onclk"
+        android:layout_marginStart="50dp"
+        android:layout_marginBottom="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imgbtn_store_profile" />
+
+    <FrameLayout
+        android:layout_width="410dp"
+        android:layout_height="1dp"
+        android:background="@color/lightgrey"
+        android:layout_marginBottom="25dp"
+        app:layout_constraintBottom_toTopOf="@+id/imgbtn_upload_profile"
+        tools:ignore="MissingConstraints" />
+
+    
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

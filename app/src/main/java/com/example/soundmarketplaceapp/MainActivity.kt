@@ -5,8 +5,6 @@ import android.os.Bundle
 import android.widget.Button
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -14,13 +12,9 @@ class MainActivity : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_authorization_page)
 
-        //Добавление перехода :0
-
-        // Находим кнопку "Войти" по ID
-        val loginButton: Button = findViewById(R.id.btnEnter)
-        // Устанавливаем обработчик нажатия
+        //Добавление перехода
+        val loginButton: Button = findViewById(R.id.btnEnter_ap)
         loginButton.setOnClickListener {
-            // Создаем Intent для перехода на AuthorizationPage2Activity
             val intent = Intent(this, AuthorizationPage2Activity::class.java)
             startActivity(intent)
         }

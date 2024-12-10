@@ -60,29 +60,9 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView2"
         tools:ignore="HardcodedText,TextSizeCheck" />
-    <!--Кнопка Логин -->
-    <!--Кнопка Пароль -->
-<!--    <android.widget.Button-->
-<!--        android:id="@+id/btnPassword"-->
-<!--        android:layout_width="300dp"-->
-<!--        android:layout_height="50dp"-->
-<!--        android:layout_gravity="center_horizontal"-->
-<!--        android:layout_marginHorizontal="56dp"-->
-<!--        android:layout_marginTop="22dp"-->
-<!--        android:background="@drawable/shape_rounded_button"-->
-<!--        android:backgroundTint="@color/lightgrey"-->
-<!--        android:fontFamily="@font/spectral_regular"-->
-<!--        android:text="Пароль"-->
-<!--        android:textColor="@color/white"-->
-<!--        android:textSize="22sp"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toBottomOf="@+id/btnLogin"-->
-<!--        tools:ignore="HardcodedText" />-->
-
 
     <android.widget.Button
-        android:id="@+id/btnEnter"
+        android:id="@+id/btnEnter_ap2"
         android:layout_width="300dp"
         android:layout_height="50dp"
         android:layout_gravity="center_horizontal"
@@ -97,36 +77,38 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText2"
+        app:layout_constraintTop_toBottomOf="@+id/editPassword_ap2"
         tools:ignore="HardcodedText,MissingConstraints" />
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/editEmail_ap2"
         android:layout_width="300dp"
         android:layout_height="50dp"
         android:layout_marginTop="56dp"
         android:fontFamily="@font/spectral_regular"
-        android:text="Введите логин"
+        android:hint="Введите email"
         android:textColor="@color/white"
+        android:textColorHint="@color/white"
         android:textSize="22sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/editPassword_ap2"
         android:layout_width="300dp"
         android:layout_height="50dp"
         android:layout_marginTop="22dp"
         android:fontFamily="@font/spectral_regular"
-        android:text="Введите пароль"
+        android:hint="Введите пароль"
+        android:textColorHint="@color/white"
         android:textColor="@color/white"
         android:textSize="22sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText" />
+        app:layout_constraintTop_toBottomOf="@+id/editEmail_ap2" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

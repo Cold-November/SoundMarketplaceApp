@@ -61,40 +61,68 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView2"
         tools:ignore="HardcodedText,TextSizeCheck" />
-    <!--Кнопка Email -->
-    <android.widget.Button
-        android:id="@+id/btnEmail"
+<!--Кнопка email-->
+    <EditText
+        android:id="@+id/editEmail_ap"
         android:layout_width="300dp"
         android:layout_height="50dp"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginHorizontal="56dp"
         android:layout_marginTop="56dp"
-        android:background="@drawable/shape_rounded_button"
-        android:backgroundTint="@color/lightgrey"
         android:fontFamily="@font/spectral_regular"
-        android:text="E-mail"
+        android:hint="Введите email"
+        android:textColorHint="@color/white"
         android:textColor="@color/white"
         android:textSize="22sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        tools:ignore="HardcodedText" />
-    <!--Кнопка Пароль -->
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+    <!--Кнопка логин-->
+    <EditText
+        android:id="@+id/editLogin_ap"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="22dp"
+        android:fontFamily="@font/spectral_regular"
+        android:hint="Введите логин"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editEmail_ap" />
+    <!--Кнопка пароль-->
+    <EditText
+        android:id="@+id/editPassword_ap"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="22dp"
+        android:fontFamily="@font/spectral_regular"
+        android:hint="Введите пароль"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editLogin_ap" />
+    <!--Кнопка зарегистрироваться-->
     <android.widget.Button
-        android:id="@+id/btnPassword"
+        android:id="@+id/btnSignUp_ap"
         android:layout_width="300dp"
         android:layout_height="50dp"
         android:layout_gravity="center_horizontal"
         android:layout_marginHorizontal="56dp"
-        android:layout_marginTop="22dp"
+        android:layout_marginTop="28dp"
         android:background="@drawable/shape_rounded_button"
-        android:backgroundTint="@color/lightgrey"
+        android:backgroundTint="@color/darkgrey"
         android:fontFamily="@font/spectral_regular"
-        android:text="Пароль"
-        android:textColor="@color/white"
+        android:text="Зарегистрироваться"
+        android:textColor="@color/yellow"
         android:textSize="22sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnEmail"
+        app:layout_constraintTop_toBottomOf="@+id/editPassword_ap"
         tools:ignore="HardcodedText" />
 </androidx.constraintlayout.widget.ConstraintLayout>

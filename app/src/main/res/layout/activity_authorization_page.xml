@@ -62,7 +62,7 @@
         tools:ignore="HardcodedText,TextSizeCheck" />
     <!--Кнопка Войти -->
     <android.widget.Button
-        android:id="@+id/btnEnter"
+        android:id="@+id/btnEnter_ap"
         android:layout_width="300dp"
         android:layout_height="50dp"
         android:layout_gravity="center_horizontal"
@@ -93,7 +93,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnEnter"
+        app:layout_constraintTop_toBottomOf="@+id/btnEnter_ap"
         tools:ignore="HardcodedText,TextContrastCheck,TextSizeCheck" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
